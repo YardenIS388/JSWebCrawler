@@ -1,1 +1,3 @@
-console.log("this is a node app")
+const  { normalizeURL } = require( "./crawl")
+
+normalizeURL('https://blog.boot.dev/path/')
