@@ -1,0 +1,15 @@
+{
+  "name": "jswebcrawler",
+  "version": "1.0.0",
+  "description": "Fun Project to test JS web crawlers",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
