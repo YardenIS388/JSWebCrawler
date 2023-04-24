@@ -1,3 +1,23 @@
-const  { normalizeURL } = require( "./crawl")
+const  { normalizeURL, crawlPage } = require( "./crawl")
 
-normalizeURL('https://blog.boot.dev/path/')
+
+
+
+function main(){
+        if (process.argv.length < 3) {
+            console.log("no website provided")
+            process.exit(1)
+        }
+        if (process.argv.length > 3) {
+            console.log("too many cli args")
+            process.exit(1)
+        }
+
+        const baseURL = process.argv[2]
+        console.log(`starting crawl ${baseURL}`)
+        crawlPage(baseURL)
+      
+
+}
+
+main()
